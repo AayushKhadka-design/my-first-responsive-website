@@ -1,0 +1,310 @@
+body{
+    /* font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5; */
+    font:15px/1.5 Arial,Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    background:#35424a;
+    color: white;
+    min-height: 70px;
+    border-bottom: 2px solid orangered;
+   
+}
+header a {
+    font-size:16px;
+    text-decoration:none;
+    color: white;
+    
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+}
+header li{
+    padding: 20px;
+}
+header .branding{
+display: flex;
+justify-content: space-between;
+}
+
+header .highlight , header .current a{
+    color: orangered;
+    font-weight:bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+#showcase{
+    min-height: 400px;
+    background-image: url("/assets/images/bg-iamge.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+}
+#showcase h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: white;
+}
+#showcase p{
+    color: white;
+    font-size: 16px;
+}
+#newsletter{
+   max-height: 50vh;
+    color: white;
+    background-color: #35424a;
+    margin-top: 10px;
+}
+#newsletter .container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 90%;
+}
+#newsletter input[type="email"]{
+    height: 20px;
+    width: 250px;
+    padding: 4px;
+}
+#newsletter input::placeholder{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+#newsletter .container .btn{
+    padding: 8px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+#boxes{
+    min-height: 150px;
+}
+#boxes .container{
+    display: flex;
+    width: 80%;
+    justify-content:space-between;
+    margin: auto;
+}
+.image{
+    width: 60px;
+    height: 60px;
+}
+#boxes .container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid black; */
+    min-height: 25vh;
+    align-items: center;
+   padding-top:20px;
+}
+#boxes .container .box p{
+    padding: 4px;
+}
+footer{
+    min-height: 50px;
+    background-color: orangered;
+}
+footer p{
+       text-align:center;
+       margin-top: 0px;
+       padding: 10px;
+       color: white;
+}
+#message_section .container{
+    min-height: 50vh;
+    display: flex;
+    width: 95%;
+    margin-bottom: 10px;
+
+
+}
+#message_section .container .about_us{
+ 
+    min-height: 48vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    /* background-color: rebeccapurple; */
+    
+}
+#message_section .container .our_work{
+    background-color: #35424a;
+    min-height: 30vh;
+    width: 60%;
+   justify-self: flex-end;
+   margin-right: 40px;
+   padding-top: 0px;
+   padding: 10px;
+   color: white;
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+#message_section .container .about_us div:first-child{
+    min-height: 15vh;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#message_section .container .about_us div:last-child{
+    background-color: #35424a;
+    color: white;
+    min-height: 15vh;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+
+}
+.service_section .container{
+    display: flex;
+    width: 95%;
+}
+.service_section .container .box{
+    /* border: 2px solid black; */
+    background-color:rgb(195, 193, 193);
+    color: black;
+    margin:10px;
+    padding: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.service_form{
+    background-color: #35424a;
+    min-height: 40vh;
+    width: 250px;
+    padding: 30px;
+    padding-right: 40px;
+    padding-top: 5px;
+    margin-top: 40px;
+    margin-left: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.service_form input{
+    height:4vh;
+    width: 250px;
+}
+.service_form input::placeholder{
+    font-size: 16px;
+    color: black;
+}
+.service_form textarea{
+    height: 7vh;
+    width: 250px;
+}
+.service_form .send{
+    border: none;
+    background-color: orangered;
+    color: white;
+    height: 40px;
+    width: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+/* Media query */
+@media (max-width:768px){
+    header .container .branding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     header .container {
+        width: 95%;
+     }
+    header .container .branding h1{
+        margin-bottom: 0px;
+    }
+    header .container .branding nav{
+        margin-right: 30px;
+        
+    }
+    #newsletter .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #newsletter .container form{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #newsletter .container form .btn{
+        width: 50vw;
+        margin-top: 10px;
+        padding:8px;
+        border: none;
+        margin-left: 7px;
+       
+     }
+    #boxes .container {
+    display: flex;
+    flex-direction: column;
+}
+#boxes .container .box p{
+    padding: 15px;
+}
+ #newsletter .container form input[type="email"]{
+     width: 50vw;
+     padding: 5px;
+     
+ }
+ #newsletter .container form input::placeholder{
+    font-size: 15px;
+ }
+ #message_section .container{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: auto;
+ }
+  #message_section .container .about_us h1{
+    text-align: center;
+  }
+ #message_section .container .about_us div{
+    width: 90vw;
+    margin: auto;
+    margin-top: 0px;
+ }
+ 
+ #message_section .container .our_work{
+    width: 90vw;
+    margin: auto;
+    margin-top: 0px;
+ }
+ .service_section .container{
+    display: flex;
+    flex-direction: column;
+ }
+ .service_section .container .get_service{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+ }
+
+
+     
+}
+
+
