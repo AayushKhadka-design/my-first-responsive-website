@@ -47,7 +47,7 @@ header a:hover{
 }
 #showcase{
     min-height: 400px;
-    background-image: url("/assets/images/bg-iamge.png");
+    background-image: url("./assets/images/bg-iamge.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
